@@ -1,1 +1,75 @@
-<p>header works!</p>
+<header class="hero" role="banner">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+  
+    <div class="hero-inner">
+      <div class="hero-top">
+        <div class="brand">
+          <span class="brand-pill">Atlas de Viajes</span>
+          <h1 class="title">
+            Las <span class="title-accent">8 Maravillas</span> del Mundo
+          </h1>
+          <p class="subtitle">
+            Un recorrido visual por lugares legendarios — historia, arquitectura y magia en un solo vistazo.
+          </p>
+  
+          <div class="cta-row">
+            <a class="btn primary" href="#maravillas">Explorar maravillas</a>
+            <a class="btn ghost" href="#info">Ver mapa</a>
+          </div>
+        </div>
+  
+        <!-- SPINNER INTELIGENTE -->
+        <div class="wonder-orb" aria-label="Rueda de maravillas">
+          <div class="orb-glow" aria-hidden="true"></div>
+  
+          <div class="orb">
+            <!-- Núcleo (cambia de imagen con animación) -->
+            <div class="orb-core" aria-hidden="true"></div>
+  
+            <!-- Anillo que rota -->
+            <ul class="orb-ring" aria-hidden="true">
+              <li class="pin p1" data-name="Gran Muralla"></li>
+              <li class="pin p2" data-name="Petra"></li>
+              <li class="pin p3" data-name="Coliseo"></li>
+              <li class="pin p4" data-name="Chichén Itzá"></li>
+              <li class="pin p5" data-name="Machu Picchu"></li>
+              <li class="pin p6" data-name="Taj Mahal"></li>
+              <li class="pin p7" data-name="Cristo Redentor"></li>
+              <li class="pin p8" data-name="Pirámides de Giza"></li>
+            </ul>
+  
+            <!-- Etiqueta dinámica (sale en hover y también por defecto) -->
+            <div class="orb-label">
+              <span class="dot"></span>
+              <span class="label-text">Maravilla destacada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- mini stats -->
+      <div class="hero-stats" id="info">
+        <div class="stat">
+          <div class="stat-num">8</div>
+          <div class="stat-txt">lugares icónicos</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">5</div>
+          <div class="stat-txt">continentes</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">∞</div>
+          <div class="stat-txt">inspiración</div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- onda inferior -->
+    <div class="hero-wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 140" preserveAspectRatio="none">
+        <path d="M0,64 C240,130 420,10 720,64 C1020,118 1200,30 1440,72 L1440,140 L0,140 Z"></path>
+      </svg>
+    </div>
+  </header>
+  
