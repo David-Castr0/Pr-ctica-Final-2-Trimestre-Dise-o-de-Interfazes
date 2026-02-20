@@ -13,3 +13,4 @@ import { Main } from './main/main';
 export class App {
   protected readonly title = signal('proyecto-final');
 }
+

@@ -1,42 +1,28 @@
-<footer class="bg-dark text-light pt-4 pb-2 mt-5">
-    <div class="container">
-      <div class="row">
-  
-        <div class="col-md-4 mb-3">
-          <h5 class="text-uppercase">Practica 2</h5>
-          <p class="small">
-            Integrar Bootstrap
-          </p>
-        </div>
-  
-        <div class="col-md-4 mb-3" ngbDropdown>
-          <button
-            class="btn btn-primary"
-            ngbDropdownToggle
-          >
-            Dropdown Enlaces
-          </button>
-  
-          <ul ngbDropdownMenu class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" [routerLink]="['/prueba']" >Inicio</a> 
-            </li>
-            <li>
-              <a class="dropdown-item" >Contacto</a>
-            </li>
-            <li>
-              <a class="dropdown-item" >Informacion</a>
-            </li>
-          </ul>
-        </div>
-  
-      </div>
-  
-      <hr class="border-secondary">
-  
-      <div class="text-center small">
-        © 2026
+<footer id="contacto" class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <h4>Dulce Delicia</h4>
+      <p>Pastelería artesanal hecha con amor</p>
+    </div>
+    <div class="footer-contact">
+      <h5>Contacto</h5>
+      <p>Email: info@dulcedelicia.com</p>
+      <p>Tel: +52 123 456 7890</p>
+      <div class="social-icons">
+        <a href="#"><img src="assets/instagram.svg" alt="Instagram"></a>
+        <a href="#"><img src="assets/facebook.svg" alt="Facebook"></a>
       </div>
     </div>
-  </footer>
-  
+    <div class="footer-links">
+      <h5>Enlaces</h5>
+      <ul>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copy">
+    © 2026 Dulce Delicia. Todos los derechos reservados.
+  </div>
+</footer>
