@@ -1,1 +1,42 @@
-<p>footer works!</p>
+<footer class="bg-dark text-light pt-4 pb-2 mt-5">
+    <div class="container">
+      <div class="row">
+  
+        <div class="col-md-4 mb-3">
+          <h5 class="text-uppercase">Practica 2</h5>
+          <p class="small">
+            Integrar Bootstrap
+          </p>
+        </div>
+  
+        <div class="col-md-4 mb-3" ngbDropdown>
+          <button
+            class="btn btn-primary"
+            ngbDropdownToggle
+          >
+            Dropdown Enlaces
+          </button>
+  
+          <ul ngbDropdownMenu class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" [routerLink]="['/prueba']" >Inicio</a> 
+            </li>
+            <li>
+              <a class="dropdown-item" >Contacto</a>
+            </li>
+            <li>
+              <a class="dropdown-item" >Informacion</a>
+            </li>
+          </ul>
+        </div>
+  
+      </div>
+  
+      <hr class="border-secondary">
+  
+      <div class="text-center small">
+        © 2026
+      </div>
+    </div>
+  </footer>
+  

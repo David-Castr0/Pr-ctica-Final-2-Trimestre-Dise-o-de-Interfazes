@@ -1,1 +1,154 @@
-<p>main works!</p>
+<main class="wonders-main" id="maravillas">
+
+    <section class="wonders-shell">
+  
+      <!-- CABECERA -->
+      <div class="wonders-head">
+        <div>
+          <span class="chip">Colección</span>
+          <h2 class="w-title">Las 8 Maravillas del Mundo</h2>
+          <p class="w-sub">Carrusel automático con detalles y miniaturas. Se mueve solo.</p>
+        </div>
+  
+        <div class="meta-card">
+          <div class="meta-top">
+            <div class="meta-dot"></div>
+            <div class="meta-title">Ahora viendo</div>
+          </div>
+          <div class="meta-name" id="wonderName">Gran Muralla China</div>
+          <div class="meta-grid">
+            <div class="meta-item">
+              <div class="meta-k">País</div>
+              <div class="meta-v" id="wonderCountry">China</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-k">Época</div>
+              <div class="meta-v" id="wonderEra">Siglos VII a.C.–XVII</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-k">Tipo</div>
+              <div class="meta-v" id="wonderType">Arquitectura</div>
+            </div>
+            <div class="meta-item">
+              <div class="meta-k">Mood</div>
+              <div class="meta-v">Épico</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- CARRUSEL CINEMÁTICO -->
+      <div class="cinema-card">
+        <div class="progress-top">
+          <div class="progress-bar" id="carouselProgress"></div>
+        </div>
+  
+        <div id="wondersCarousel"
+             class="carousel slide carousel-fade"
+             data-bs-ride="carousel"
+             data-bs-interval="3500"
+             data-bs-pause="false"
+             data-bs-touch="false">
+  
+          <div class="carousel-inner">
+  
+            <div class="carousel-item active" data-name="Gran Muralla China" data-country="China" data-era="Siglos VII a.C.–XVII" data-type="Arquitectura">
+              <img src="assets/muralla.jpg" class="d-block w-100 cinema-img" alt="Gran Muralla China">
+              <div class="cinema-overlay"></div>
+              <div class="cinema-caption">
+                <span class="tag">Asia</span>
+                <h3>Gran Muralla China</h3>
+                <p>Una línea infinita entre montañas y leyenda.</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-name="Petra" data-country="Jordania" data-era="Siglo IV a.C." data-type="Ciudad tallada">
+              <img src="assets/petra.jpg" class="d-block w-100 cinema-img" alt="Petra">
+              <div class="cinema-overlay"></div>
+              <div class="cinema-caption">
+                <span class="tag">Oriente Medio</span>
+                <h3>Petra</h3>
+                <p>Fachadas esculpidas en roca rosa. Brutal.</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-name="Coliseo" data-country="Italia" data-era="Siglo I d.C." data-type="Anfiteatro">
+              <img src="assets/coliseo.jpg" class="d-block w-100 cinema-img" alt="Coliseo">
+              <div class="cinema-overlay"></div>
+              <div class="cinema-caption">
+                <span class="tag">Europa</span>
+                <h3>Coliseo</h3>
+                <p>Piedra, historia y espectáculo romano.</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-name="Chichén Itzá" data-country="México" data-era="Siglos VI–XII" data-type="Templo">
+              <img src="assets/chichen-itza.jpg" class="d-block w-100 cinema-img" alt="Chichén Itzá">
+              <div class="cinema-overlay"></div>
+              <div class="cinema-caption">
+                <span class="tag">América</span>
+                <h3>Chichén Itzá</h3>
+                <p>Geometría sagrada y cielo maya.</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-name="Machu Picchu" data-country="Perú" data-era="Siglo XV" data-type="Ciudad inca">
+              <img src="assets/machu-pichu.jpg" class="d-block w-100 cinema-img" alt="Machu Picchu">
+              <div class="cinema-overlay"></div>
+              <div class="cinema-caption">
+                <span class="tag">Andes</span>
+                <h3>Machu Picchu</h3>
+                <p>Niebla, piedra y altura. Pura vibra.</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-name="Taj Mahal" data-country="India" data-era="Siglo XVII" data-type="Mausoleo">
+              <img src="assets/Taj-Mahal.jpg" class="d-block w-100 cinema-img" alt="Taj Mahal">
+              <div class="cinema-overlay"></div>
+              <div class="cinema-caption">
+                <span class="tag">Asia</span>
+                <h3>Taj Mahal</h3>
+                <p>Mármol perfecto, simetría hipnótica.</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-name="Cristo Redentor" data-country="Brasil" data-era="1931" data-type="Monumento">
+              <img src="assets/Cristo_Redentor.jpg" class="d-block w-100 cinema-img" alt="Cristo Redentor">
+              <div class="cinema-overlay"></div>
+              <div class="cinema-caption">
+                <span class="tag">Río</span>
+                <h3>Cristo Redentor</h3>
+                <p>Una silueta gigante sobre la ciudad.</p>
+              </div>
+            </div>
+  
+            <div class="carousel-item" data-name="Pirámides de Giza" data-country="Egipto" data-era="c. 2600–2500 a.C." data-type="Necrópolis">
+              <img src="assets/piramides.jpg" class="d-block w-100 cinema-img" alt="Pirámides de Giza">
+              <div class="cinema-overlay"></div>
+              <div class="cinema-caption">
+                <span class="tag">África</span>
+                <h3>Pirámides de Giza</h3>
+                <p>La maravilla eterna del desierto.</p>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+  
+        <!-- MINI THUMBNAILS -->
+        <div class="thumbs" aria-label="Miniaturas de maravillas">
+          <button class="thumb active" data-slide-to="0" aria-label="Muralla"><img src="assets/muralla.jpg" alt=""></button>
+          <button class="thumb" data-slide-to="1" aria-label="Petra"><img src="assets/petra.jpg" alt=""></button>
+          <button class="thumb" data-slide-to="2" aria-label="Coliseo"><img src="assets/coliseo.jpg" alt=""></button>
+          <button class="thumb" data-slide-to="3" aria-label="Chichén Itzá"><img src="assets/chichen-itza.jpg" alt=""></button>
+          <button class="thumb" data-slide-to="4" aria-label="Machu Picchu"><img src="assets/machu-pichu.jpg" alt=""></button>
+          <button class="thumb" data-slide-to="5" aria-label="Taj Mahal"><img src="assets/Taj-Mahal.jpg" alt=""></button>
+          <button class="thumb" data-slide-to="6" aria-label="Cristo Redentor"><img src="assets/Cristo_Redentor.jpg" alt=""></button>
+          <button class="thumb" data-slide-to="7" aria-label="Giza"><img src="assets/piramides.jpg" alt=""></button>
+        </div>
+  
+      </div>
+  
+    </section>
+  </main>
+  
